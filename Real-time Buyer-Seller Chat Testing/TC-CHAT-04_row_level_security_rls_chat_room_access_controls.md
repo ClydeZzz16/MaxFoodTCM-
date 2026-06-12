@@ -1,19 +1,16 @@
-## **TC-CHAT-04:** Row-Level Security (RLS) Chat Room Access Controls  
+## **TC-CHAT-04:** Row Level Security Rls Chat Room Access Controls  
 
-> **Summary:** Verify that RLS prevents users from reading or writing messages in chat rooms they do not belong to.  <br>
+> **Summary:** Row Level Security Rls Chat Room Access Controls verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User A and User B belong to Chat Room X. User C is an external user.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Sign in as User C.                                 | Verify user is logged in successfully.             |
+ |  2 | Attempt to fetch or write messages for Chat Room X via Supabase API commands. | Verify that Supabase API returns a 'Permission Denied' or empty list error, blocking access. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Supabase Row-Level Security (RLS) policies successfully restrict chat channel reads/writes to room participants.  

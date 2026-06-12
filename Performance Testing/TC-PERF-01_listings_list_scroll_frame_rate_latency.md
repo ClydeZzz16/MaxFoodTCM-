@@ -1,19 +1,16 @@
-## **TC-PERF-01:** Listings list scroll frame rate latency  
+## **TC-PERF-01:** Listings List Scroll Frame Rate Latency  
 
-> **Summary:** Verify the listing scrolling is smooth (60fps) and loads pages lazily without lags.  <br>
+> **Summary:** Listings List Scroll Frame Rate Latency verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Over 100 listings exist in the food marketplace database.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Fling-scroll down the listings feed grid quickly.  | Verify listings list scrolls smoothly (maintaining ~60fps frame rate) without visual stutter. |
+ |  2 | Observe scrolling near bottom boundary.            | Verify additional listing pages load lazily and append to layout without freezing the interface thread. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Listings feed grid manages lazy pagination smoothly under high scroll velocities.  

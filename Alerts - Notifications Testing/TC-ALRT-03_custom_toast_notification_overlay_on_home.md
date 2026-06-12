@@ -1,19 +1,16 @@
-## **TC-ALRT-03:** Custom Toast Notification Overlay on Home  
+## **TC-ALRT-03:** Custom Toast Notification Overlay On Home  
 
-> **Summary:** Verify new messages/alerts display a sliding toast alert overlay.  <br>
+> **Summary:** Custom Toast Notification Overlay On Home verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User is currently on the dashboard home screen.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Simulate an incoming alert notification (e.g. a matching listing is added). | Verify a custom sliding toast notification overlay appears at the top of the home screen showing alert details. |
+ |  2 | Wait 5 seconds.                                    | Verify toast automatically slides out of view smoothly. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Real-time sliding toast overlay renders correctly for alerts/notifications.  

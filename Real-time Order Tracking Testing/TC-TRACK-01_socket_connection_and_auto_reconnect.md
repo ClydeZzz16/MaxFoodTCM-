@@ -1,19 +1,17 @@
-## **TC-TRACK-01:** Socket Connection and Auto-Reconnect  
+## **TC-TRACK-01:** Socket Connection And Auto Reconnect  
 
-> **Summary:** Verify order tracking socket successfully establishes connection and reconnects on drop.  <br>
+> **Summary:** Socket Connection And Auto Reconnect verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User has placed an order that is ready for tracking.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Navigate to the Order Tracking page.               | Verify tracking map or progress timeline renders, establishing a live connection. |
+ |  2 | Disconnect internet connection temporarily.        | Verify that 'Connection Lost' indicator displays and map status freezes. |
+ |  3 | Re-enable internet connection.                     | Verify that socket automatically reconnects, syncs status, and indicator disappears. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Real-time tracking handles connection dropouts and auto-reconnects safely.  

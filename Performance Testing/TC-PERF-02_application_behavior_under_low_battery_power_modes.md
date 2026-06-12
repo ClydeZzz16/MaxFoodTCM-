@@ -1,19 +1,16 @@
-## **TC-PERF-02:** Application behavior under low battery/power modes  
+## **TC-PERF-02:** Application Behavior Under Low Battery Power Modes  
 
-> **Summary:** Verify that app continues to sync state gracefully in power-saving mode.  <br>
+> **Summary:** Application Behavior Under Low Battery Power Modes verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Device battery is below 15% and enters low battery/power saver mode.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Browse dashboard listings and chat thread inbox.   | Verify app interface remains responsive.           |
+ |  2 | Send a message inside a chat room.                 | Verify message still syncs and persists under restricted power saving states. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - State transitions remain stable and synchronize correctly under low-power modes.  

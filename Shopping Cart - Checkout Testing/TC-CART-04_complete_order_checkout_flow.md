@@ -1,19 +1,16 @@
 ## **TC-CART-04:** Complete Order Checkout Flow  
 
-> **Summary:** Verify user can enter info and submit cart checkout to record order.  <br>
+> **Summary:** Complete Order Checkout Flow verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Items exist inside the shopping cart.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Tap the 'Proceed to Checkout' button.              | Verify Checkout screen is shown displaying delivery address and payment fields. |
+ |  2 | Confirm delivery address and tap 'Submit Order'.   | Verify a success overlay displays, the order is registered in Supabase database, and cart is cleared. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Order is recorded in the orders table, and local cart state resets to empty.  

@@ -1,19 +1,16 @@
-## **TC-CON-03:** Android platform execution checks  
+## **TC-CON-03:** Android Platform Execution Checks  
 
-> **Summary:** Verify apk installs and runs without crashes on standard Android devices.  <br>
+> **Summary:** Android Platform Execution Checks verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** An Android mobile device or emulator is running.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Install the release build APK on the Android device. | Verify package installer completes without error.  |
+ |  2 | Launch the app, log in, and browse dashboard categories. | Verify app execution is stable without lags or JVM/Dart crashes. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Android apk executes cleanly on target Android platforms.  

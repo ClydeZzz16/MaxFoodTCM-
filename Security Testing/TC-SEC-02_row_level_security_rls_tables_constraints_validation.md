@@ -1,19 +1,16 @@
-## **TC-SEC-02:** Row-Level Security (RLS) tables constraints validation  
+## **TC-SEC-02:** Row Level Security Rls Tables Constraints Validation  
 
-> **Summary:** Verify database restricts unauthorized CRUD operations on protected tables.  <br>
+> **Summary:** Row Level Security Rls Tables Constraints Validation verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User has logged in with Standard credentials.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Attempt to make raw Supabase API updates to other profiles or delete listings owned by other sellers. | Verify that Supabase API returns 403 Forbidden or empty updates list. |
+ |  2 | Inspect database status.                           | Verify that database records remain unmodified.    |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Supabase RLS constraints securely restrict writes to owner profiles/listings only.  

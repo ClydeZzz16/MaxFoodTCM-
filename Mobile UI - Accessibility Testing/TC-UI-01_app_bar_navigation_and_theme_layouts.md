@@ -1,19 +1,16 @@
-## **TC-UI-01:** App Bar, Navigation, and Theme layouts  
+## **TC-UI-01:** App Bar Navigation And Theme Layouts  
 
-> **Summary:** Verify layout elements, color scheme, and navigation bar are rendered correctly.  <br>
+> **Summary:** App Bar Navigation And Theme Layouts verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** App is running in both light and dark display modes.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Observe theme colors and layout margins on home dashboard. | Verify buttons, text contrast ratios, and margins render correctly according to style guidelines. |
+ |  2 | Toggle dark mode setting.                          | Verify all screens adapt layout colors instantly, ensuring high text readability. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Visual display guidelines are fully met across all UI themes.  

@@ -1,19 +1,16 @@
-## **TC-AUTH-04:** Navigation Redirection (Protected Routes)  
+## **TC-AUTH-04:** Navigation Redirection Protected Routes   
 
-> **Summary:** Verify unauthenticated users are forced to Landing Page and cannot access protected screens.  <br>
+> **Summary:** Navigation Redirection Protected Routes  verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User is unauthenticated.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Launch application and attempt to navigate to a protected route URL (e.g., `/profile` or `/chat`). | Verify that GoRouter blocks navigation and redirects the view to the Landing Page. |
+ |  2 | Verify dashboard access is inaccessible.           | Confirm that dashboard elements do not render and landing page remains active. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - User is restricted to the landing page; no protected state leaks.  

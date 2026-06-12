@@ -1,19 +1,17 @@
-## **TC-TRACK-02:** Order Status Updates Sync (Buyer & Seller ends)  
+## **TC-TRACK-02:** Order Status Updates Sync Buyer Seller Ends   
 
-> **Summary:** Verify order status transitions sync dynamically on buyer and seller interfaces.  <br>
+> **Summary:** Order Status Updates Sync Buyer Seller Ends  verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Order status is currently 'Pending'.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Open buyer tracking view and seller order management screen concurrently. | Verify both views display 'Pending' status.        |
+ |  2 | On the seller screen, change order status to 'Preparing'. | Verify status updates to 'Preparing' instantly on the seller screen. |
+ |  3 | Observe the buyer tracking view.                   | Verify buyer tracking timeline updates to 'Preparing' in real-time without requiring page refresh. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Order state changes sync bidirectionally using live database/socket replication.  

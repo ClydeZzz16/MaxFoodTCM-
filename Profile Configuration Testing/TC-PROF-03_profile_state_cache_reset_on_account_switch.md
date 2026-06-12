@@ -1,19 +1,16 @@
-## **TC-PROF-03:** Profile State Cache Reset on Account Switch  
+## **TC-PROF-03:** Profile State Cache Reset On Account Switch  
 
-> **Summary:** Verifying that logging out/switching accounts invalidates the previous user profile cache.  <br>
+> **Summary:** Profile State Cache Reset On Account Switch verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User has active profile credentials cached locally.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Log out of current account and log in with a different email account. | Verify transition succeeds and dashboard displays. |
+ |  2 | Navigate to the Profile screen.                    | Verify that previous user's name, phone, and address cache is completely cleared and the new user's profile is loaded from Supabase. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Riverpod auto-invalidates the previous profile state to prevent account credential leaks.  

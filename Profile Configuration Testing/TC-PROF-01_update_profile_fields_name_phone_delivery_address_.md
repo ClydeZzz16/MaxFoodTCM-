@@ -1,19 +1,17 @@
-## **TC-PROF-01:** Update Profile Fields (Name, Phone, Delivery Address)  
+## **TC-PROF-01:** Update Profile Fields Name Phone Delivery Address   
 
-> **Summary:** Editing and persisting profile name, phone, and delivery address.  <br>
+> **Summary:** Update Profile Fields Name Phone Delivery Address  verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User is signed in and has a valid profile card.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Navigate to the Profile screen and tap 'Edit Profile'. | Verify edit form field inputs are active.          |
+ |  2 | Modify Full Name to 'John Farmer Doe', Phone to '+639123456789', and Address to 'Ubay, Bohol'. | Verify inputs show correct text values.            |
+ |  3 | Tap 'Save changes' button.                         | Verify a success snackbar displays and changes are immediately updated on the profile card and synced to Supabase database. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Profile data persists in the database table and Riverpod local state is updated.  

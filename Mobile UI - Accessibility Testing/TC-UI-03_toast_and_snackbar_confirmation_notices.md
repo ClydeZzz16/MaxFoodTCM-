@@ -1,19 +1,16 @@
-## **TC-UI-03:** Toast and Snackbar confirmation notices  
+## **TC-UI-03:** Toast And Snackbar Confirmation Notices  
 
-> **Summary:** Verify snackbar confirmations display on successful profile, cart, or subscription edits.  <br>
+> **Summary:** Toast And Snackbar Confirmation Notices verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Cart screen is open.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Tap remove item on a cart product card.            | Verify a snackbar message displays at the bottom confirming item removal. |
+ |  2 | Tap Undo button on the snackbar.                   | Verify snackbar closes and the item is restored back to the cart grid. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Snackbars and toasts show clear notifications and handle undo actions.  

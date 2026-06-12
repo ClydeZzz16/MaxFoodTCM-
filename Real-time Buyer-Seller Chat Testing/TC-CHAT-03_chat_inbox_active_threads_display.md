@@ -1,19 +1,16 @@
-## **TC-CHAT-03:** Chat Inbox active threads display  
+## **TC-CHAT-03:** Chat Inbox Active Threads Display  
 
-> **Summary:** Verify inbox thread list displays active rooms with latest message snippet.  <br>
+> **Summary:** Chat Inbox Active Threads Display verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User has exchanged messages in several chat rooms.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Navigate to the Chat Inbox tab in navigation.      | Verify Inbox screen is shown displaying active conversation cards. |
+ |  2 | Inspect the inbox conversation items.              | Verify each card shows the seller/buyer name, latest message snippet, sent timestamp, and correct unread dot badge. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Inbox lists active chat rooms sorted by the latest message timestamp.  

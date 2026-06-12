@@ -1,19 +1,16 @@
 ## **TC-LIST-02:** Listing Search Filter  
 
-> **Summary:** Verify search query filters listing items dynamically.  <br>
+> **Summary:** Listing Search Filter verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Multiple listings exist in the database catalog (e.g. Rice, Mangoes, Corn).  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Tap the search searchbar on the home screen.       | Verify text field is focused and keyboard opens.   |
+ |  2 | Type 'Mangoes' into the search input.              | Verify the listings feed filters dynamically to display only items containing the keyword 'Mangoes'. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Search query narrows catalog display using client-side or database filter.  

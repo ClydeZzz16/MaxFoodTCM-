@@ -1,19 +1,16 @@
-## **TC-SEC-01:** Deep link Auth token validation checks  
+## **TC-SEC-01:** Deep Link Auth Token Validation Checks  
 
-> **Summary:** Verify invalid/forged deep link email tokens are rejected.  <br>
+> **Summary:** Deep Link Auth Token Validation Checks verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User attempts authentication flow.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Attempt to access auth confirmation handler URL with a forged or empty magic link token. | Verify that handler rejects execution.             |
+ |  2 | Observe redirection result.                        | Verify that session is rejected and navigation routes to landing page with error toast. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Security token validation blocks access to unauthenticated sessions.  

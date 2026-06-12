@@ -1,19 +1,16 @@
 ## **TC-LIST-03:** Category Filter Navigation  
 
-> **Summary:** Verify clicking category tags displays only relevant listings.  <br>
+> **Summary:** Category Filter Navigation verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Category filters exist (e.g., Grains, Vegetables, Fruits).  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Tap the 'Fruits' category icon in the category slider. | Verify the slider highlights the selected tag.     |
+ |  2 | Observe listings grid updates.                     | Verify that only items categorized as 'Fruits' are displayed in the feed list. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Dashboard filters items by selected category tag.  

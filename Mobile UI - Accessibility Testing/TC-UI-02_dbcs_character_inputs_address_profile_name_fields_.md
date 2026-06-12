@@ -1,19 +1,16 @@
-## **TC-UI-02:** DBCS Character Inputs (Address, Profile Name fields)  
+## **TC-UI-02:** Dbcs Character Inputs Address Profile Name Fields   
 
-> **Summary:** Verify that double-byte characters are saved and displayed correctly in form fields.  <br>
+> **Summary:** Dbcs Character Inputs Address Profile Name Fields  verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User is editing profile fields.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Set Full Name to double-byte characters 'テストユーザー' (Japanese) or '張三' (Chinese). | Verify input text box accepts inputs correctly.    |
+ |  2 | Tap Save and inspect updated database record.      | Verify characters are persisted without encoding distortion, displaying correctly on profile cards. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Form text boxes accept and persist double-byte characters (DBCS) safely.  

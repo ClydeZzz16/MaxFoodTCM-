@@ -1,19 +1,16 @@
-## **TC-CART-03:** Remove Listing from Cart  
+## **TC-CART-03:** Remove Listing From Cart  
 
-> **Summary:** Verify user can remove an item from the cart.  <br>
+> **Summary:** Remove Listing From Cart verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** An item exists inside the shopping cart.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Tap the trash/delete icon on the item card.        | Verify item is removed from the cart screen immediately and cart badge decrements. |
+ |  2 | Observe empty cart layout.                         | Verify 'Your cart is empty' illustration is shown. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Item is removed from local cart list state.  

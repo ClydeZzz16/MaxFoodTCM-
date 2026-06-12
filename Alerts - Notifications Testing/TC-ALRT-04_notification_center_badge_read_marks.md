@@ -1,19 +1,16 @@
-## **TC-ALRT-04:** Notification Center Badge & Read Marks  
+## **TC-ALRT-04:** Notification Center Badge Read Marks  
 
-> **Summary:** Verify notification center displays unread counts and markings update interactively.  <br>
+> **Summary:** Notification Center Badge Read Marks verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** User has unread notifications.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Observe navigation menu bar.                       | Verify that notification center icon shows a red badge counter representing unread count (e.g. '3'). |
+ |  2 | Tap notification icon to open Notification Center, and click on an unread item. | Verify details open and red badge counter decrements by 1 interactively. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Notification list read statuses update dynamically on client and server.  

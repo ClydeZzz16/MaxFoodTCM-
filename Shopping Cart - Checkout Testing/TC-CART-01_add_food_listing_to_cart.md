@@ -1,19 +1,16 @@
-## **TC-CART-01:** Add Food Listing to Cart  
+## **TC-CART-01:** Add Food Listing To Cart  
 
-> **Summary:** Verify user can add a food listing item to the cart.  <br>
+> **Summary:** Add Food Listing To Cart verification.  <br>
 
-**Preconditions:** _None_  
+**Preconditions:** Product listings details page is open.  
 
 Scenario 1 
 
  | \# | Step | Expected Behavior | 
  |----|------|-------------------| 
- |  1 |      | Verify that ...   | 
- |  2 |      | Verify that ...   | 
- |  3 |      | Verify that ...   |  
+ |  1 | Tap 'Add to Cart' button.                          | Verify that a success toast appears and the cart icon badge increments by 1. |
+ |  2 | Tap the cart icon to navigate to the Cart screen.  | Verify the added food item is displayed with its correct price and details. |  
 
 **Post-conditions:**  
 
- - x  
- - y  
- - z  
+ - Listing item is successfully stored in the local cart state.  
