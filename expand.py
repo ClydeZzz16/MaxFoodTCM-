@@ -6,7 +6,7 @@ from glob import glob
 
 def main():
     rows = list()
-    with open("ubay_harvest_tcm_v2.csv", newline="", encoding="utf-8") as file:
+    with open("ubay_harvest_tcm_v3.csv", newline="", encoding="utf-8") as file:
         rows = list(csv.reader(file))
 
     SNAKECASE = re.compile(r"[^\w.]+")
