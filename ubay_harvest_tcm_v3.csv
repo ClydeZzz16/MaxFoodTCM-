@@ -1,0 +1,47 @@
+Test Cases,TEST CASE ID,Sample Summary
+Authentication Testing,,
+  User Login Valid Credentials,AUTH-001,Verify user can sign in using valid credentials.
+  User Login Invalid Email Format,AUTH-002,Verify sign in is blocked and warning displays when email format is invalid.
+  User Login Invalid Credentials,AUTH-003,Verify sign in fails and error displays when credentials do not match.
+  User Signup Valid Information,AUTH-004,Verify user can create a new account with valid details.
+  User Signup Password Mismatch,AUTH-005,Verify warning displays when confirmation password does not match.
+  Email Confirmation Valid Token,AUTH-006,Verify account is activated and logs in when deep link token is clicked.
+  Forgot Password Valid Email,AUTH-007,Verify password reset email is sent when valid email is entered.
+  Update Password Valid Token,AUTH-008,Verify user can change password after accessing recovery link.
+  Logout Valid Session,AUTH-009,Verify session is cleared and app routes to landing page on logout.
+Profile Configuration Testing,,
+  Update Profile Name and Delivery Address,PROF-001,Verify profile fields are saved and persisted to database.
+  Upload Avatar Image to Storage,PROF-002,"Verify image picker loads image, uploads it to Supabase Storage, and updates profile avatar."
+  Invalidate profile cache on sign out,PROF-003,Verify profile cache is cleared on logout to prevent credential leaks.
+Dashboard & Listings Testing,,
+  Browse food listings catalog,LIST-001,Verify listings feed grid loads catalog from products table in Supabase.
+  Search listings by name,LIST-002,Verify listings search bar filters items dynamically by name.
+  Filter listings by category tag,LIST-003,Verify category slider tag selections filter listings feed.
+  View listing details page,LIST-004,Verify details of selected food listings load correctly on navigation.
+Real-time Buyer-Seller Chat Testing,,
+  Open chat room from product listing,CHAT-001,Verify tapping Chat on listing detail screen opens or creates a unique room.
+  Send and receive chat messages real-time,CHAT-002,Verify messages sync instantly between buyer and seller views.
+  Display inbox conversation list,CHAT-003,Verify chat inbox displays active threads sorted by latest message timestamp.
+  Verify row-level security on chat messages,CHAT-004,Verify RLS restricts chat messages read/write access to room members only.
+Alerts & Notifications Testing,,
+  Subscribe to search listing alerts,ALRT-001,Verify user can create keyword-based subscriptions for new listing notifications.
+  Trigger notifications on database change,ALRT-002,Verify database trigger generates notification records when matching listings are added.
+  Custom toast overlay for new notifications,ALRT-003,Verify sliding toast overlay displays alert on incoming notifications.
+  Update notification read status and badges,ALRT-004,Verify unread badge counts decrement as notifications are read.
+Mobile UI & Accessibility Testing,,
+  Verify App Bar and navigation layouts,UI-001,"Verify contrast ratio, layouts, and app bar themes render correctly."
+  Check DBCS character inputs,UI-002,Verify text fields accept and save double-byte character set (DBCS) values.
+  Verify toast and snackbar notices,UI-003,Verify interactive confirmation snackbars and toasts show clearly.
+  Verify offline screen displays,UI-004,Verify a full-screen offline warning displays when internet connection is cut.
+Connectivity Testing,,
+  Handle network switching gracefully,CON-001,Verify app retains session and downloads when swapping networks (WiFi/LTE).
+  Load cached listings when offline,CON-002,Verify cached dashboard catalog displays when running app offline.
+  Verify Android apk stability,CON-003,Verify apk package installs and launches stably on Android targets.
+Security Testing,,
+  Reject forged deep link tokens,SEC-001,Verify forged deep links are rejected by redirect guards.
+  Verify database RLS policies,SEC-002,Verify tables restrict unauthorized read/write requests.
+  Prevent XSS injection in chat inputs,SEC-003,"Verify input fields sanitize string injections, preventing XSS."
+Performance Testing,,
+  Verify lists scrolling frame rate,PERF-001,Verify lists render scrolling smoothly at ~60fps without lag.
+  Verify sync under low battery mode,PERF-002,Verify app syncs data safely in device battery saver mode.
+  Handle full storage write exceptions,PERF-003,Verify app warns user and handles write exceptions safely when disk is full.
